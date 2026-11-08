@@ -29,12 +29,6 @@ sans-serif;
 background:#ffffff;
 color:#111;
 
-display:flex;
-justify-content:center;
-align-items:center;
-
-height:100vh;
-
 text-align:center;
 padding:30px;
 
@@ -43,6 +37,12 @@ padding:30px;
 .container{
 
 max-width:850px;
+margin:0 auto;
+min-height:calc(100vh - 60px);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 
 }
 
@@ -126,6 +126,79 @@ font-weight:600;
 
 }
 
+/* Products section (added 2026-11-08) */
+.products{
+max-width:720px;
+margin:0 auto;
+padding:40px 0 20px;
+text-align:left;
+}
+
+.products h2{
+font-size:22px;
+margin:0 0 16px;
+}
+
+.product-card{
+border:1px solid #e5e7eb;
+border-radius:16px;
+padding:24px;
+background:#fff;
+}
+
+.product-card h3{
+font-size:20px;
+margin:0 0 8px;
+}
+
+.product-card .tagline{
+font-weight:700;
+margin:0 0 8px;
+}
+
+.product-card p{
+margin:0 0 12px;
+line-height:1.6;
+color:#4e5968;
+}
+
+.product-card .sub{
+font-size:14px;
+color:#8b95a1;
+}
+
+.product-card .btn{
+display:inline-block;
+padding:16px 34px;
+background:#111;
+color:white;
+text-decoration:none;
+border-radius:999px;
+font-weight:600;
+transition:.25s;
+}
+
+.product-card .btn:hover{
+background:#444;
+transform:translateY(-2px);
+}
+
+/* Business-info footer (added 2026-11-08) */
+.biz-info{
+max-width:720px;
+margin:40px auto 0;
+padding:24px 0 40px;
+border-top:1px solid #e5e7eb;
+font-size:14px;
+line-height:1.7;
+color:#888;
+text-align:center;
+}
+
+.biz-info a{
+color:#111;
+}
+
 @media(max-width:700px){
 
 .logo{
@@ -199,6 +272,22 @@ hello@mideal.online
 </div>
 
 </div>
+
+<section class="products" lang="ko" aria-labelledby="products-title">
+  <h2 id="products-title">만든 서비스 <span lang="en">/ Products</span></h2>
+  <article class="product-card">
+    <h3>10초 장부</h3>
+    <p class="tagline">영수증 찍으면, AI가 장부를 써드려요.</p>
+    <p>사장님의 하루 매출과 지출을 10초 만에 기록하는 무료 장부예요. 광고 없이 쓸 수 있고, 마진율·배달앱 수수료·카드수수료·부가세·손익분기점 계산기도 함께 있어요. 웹과 토스 미니앱에서 써보세요.</p>
+    <p lang="en" class="sub">A 10-second daily profit &amp; loss book for small business owners in Korea.</p>
+    <a href="https://10sjangbu.com" class="btn">10초 장부 바로가기 →</a>
+  </article>
+</section>
+
+<footer class="biz-info" lang="ko">
+  <p>마이디얼 | 대표 김종수 | 사업자등록번호 768-21-02429</p>
+  <p>문의 <a href="mailto:hello@mideal.online">hello@mideal.online</a></p>
+</footer>
 
 </body>
 
